@@ -1,0 +1,10 @@
+Id,Name,Salary,Department
+101,ABCD,40000.0,Production
+102,EFGH,50000.0,Research
+103,IJKL,70000.0,Development
+Invalid data
+104,MNOP,60000.0,Admin
+105,QRST,20000.0,HR
+110,Name10,60000.0,HR
+111,Name11,65000.0,Admin
+112,Name12,75000.0,Production
