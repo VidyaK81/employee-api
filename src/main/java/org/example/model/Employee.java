@@ -6,19 +6,22 @@ import jakarta.persistence.*;
 @Table(name = "Employee")
 public class Employee {
 
-    @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "employeeId")
-    private Long employeeId;
+        @Id
+        //@GeneratedValue(strategy = GenerationType.IDENTITY)
+        @Column(name = "employeeId")
+        private Long employeeId;
 
-    @Column(nullable = false)
-    private String employeeName;
+        @Column(nullable = false)
+        private String employeeName;
 
-    @Column(name = "employeeDepartment")
-    private String employeeDepartment;
+        @Column(name = "employeeDepartment")
+        private String employeeDepartment;
 
-    @Column
-    private Double employeeSalary;
+        @Column
+        private Double employeeSalary;
+
+        @Column
+        private int projectID;
 
     // Constructors
     public Employee() {}
@@ -41,4 +44,10 @@ public class Employee {
 
     public Double getEmployeeSalary() { return employeeSalary; }
     public void setEmployeeSalary(Double employeeSalary) { this.employeeSalary = employeeSalary; }
+
+    public int getProjectID() {
+        return projectID;}
+
+    public void setProjectID(int projectID) {
+        this.projectID = projectID;}
 }
